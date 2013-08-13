@@ -33,5 +33,7 @@ var app = app || {};
 		this.storage = window.localStorage;
 	}
 	TaskStorage.prototype = taskStoragePrototype;
+	
 	app.TaskStorage = TaskStorage;
+
 })();
