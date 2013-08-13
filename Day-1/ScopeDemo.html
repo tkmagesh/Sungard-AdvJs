@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Scope Demo</title>
+	<script>
+	(function(){
+		var count = 0;	
+		function trackCount(){
+			count++;
+			document.getElementById("divMessage").innerHTML = count;
+		}
+		window.onload = function(){
+			document.getElementById("btnCount").onclick = trackCount;
+		}
+	})();
+
+	</script>
+</head>
+<body>
+	<input type="button" value="Count" id="btnCount">
+	<div id="divMessage"></div>
+</body>
+</html>
